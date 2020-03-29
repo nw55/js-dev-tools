@@ -2,9 +2,11 @@
 
 module.exports = {
     root: true,
+    ignorePatterns: [
+    ],
     env: {
         node: true,
         es2020: true
     },
-    extends: './eslint/build/es'
+    extends: './packages/eslint-config/build/es'
 };

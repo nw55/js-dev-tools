@@ -1,3 +1,4 @@
-# @nw55/dev-tools
+# NW55 Development Tools
 
-NW55 Development Tools
+- @nw55/dev-tools
+- @nw55/eslint-config

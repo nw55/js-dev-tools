@@ -1,22 +1,15 @@
 {
-  "name": "@nw55/dev-tools",
-  "version": "0.1.0",
-  "description": "NW55 Development Tools",
-  "repository": "https://github.com/nw55/js-dev-tools.git",
-  "author": "Niklas Werner (nw55) <nw55@outlook.com>",
-  "license": "MIT",
-  "files": [
-    "eslint",
-    "fix-dts-bundle.js"
+  "private": true,
+  "workspaces": [
+    "packages/*"
   ],
   "scripts": {
     "lint": "eslint .",
-    "build": "eslint -c eslint-config.js ."
+    "build:dev-tools": "cd packages/dev-tools && yarn build",
+    "build:eslint-config": "cd packages/eslint-config && yarn build",
+    "build": "yarn build:dev-tools && yarn build:eslint-config"
   },
-  "devDependencies": {
-    "eslint": "^6.8.0"
-  },
-  "peerDependencies": {
+  "dependencies": {
     "eslint": "^6.8.0"
   }
 }

@@ -4,5 +4,5 @@ const buildConfig = require('./eslint-config');
 
 module.exports = {
     ...buildConfig,
-    extends: './eslint/dev/es'
+    extends: './packages/eslint-config/dev/es'
 };
