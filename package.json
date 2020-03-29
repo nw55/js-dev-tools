@@ -4,5 +4,8 @@
   "description": "NW55 Development Tools",
   "repository": "https://github.com/nw55/js-dev-tools.git",
   "author": "Niklas Werner (nw55) <nw55@outlook.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "files": [
+    "fix-dts-bundle.js"
+  ]
 }
