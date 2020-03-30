@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+  - node
+script: yarn ci
+branches:
+  only:
+  - master
+  - develop
+  - /^feature\//
+  - /^hotfix\//
+  - /^release\//
