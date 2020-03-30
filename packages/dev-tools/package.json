@@ -19,7 +19,8 @@
     "nw55-fix-dts-bundle": "./fix-dts-bundle.js"
   },
   "scripts": {
-    "build": "eslint -c ../../eslint-config.js ."
+    "build": "eslint -c ../../eslint-config.js .",
+    "prepublishOnly": "yarn build"
   },
   "devDependencies": {
     "eslint": "^6.8.0"
